@@ -12,6 +12,8 @@ const url = `https://api.themoviedb.org/3/${apipath}?api_key=4ff455dedd79aba3aec
         async function fetchMovies(){
           const response = await fetch(url)
           const json = await response.json();
+
+          console.log(json)
           setData(json.results)
         }
         
